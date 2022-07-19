@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Orderlist</title>
+    <!-- Link BS5 -->
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-grid.min.css">
+    <!-- Link Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <!-- Link FontAwesome - Icons -->
+    <link rel="stylesheet" href="../assets/vendor/fontawesome-free-6.1.1/css/all.min.css">
+    <!-- Customize CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-info">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">MyBuilder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"f data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          <a class="nav-link" href="daftar-pesanan.php">Project List</a>
+          <a class="nav-link" href="#AboutUS">About</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Forum Pemesanan -->
+  <!-- Banner -->
+    <div class="card banner bg-info">
+    <div class="card-body">
+        <div class="alert alert-primary d-flex align-items-center" role="alert">
+            <i class="fa-solid fa-circle-exclamation fa-lg me-3"></i>
+            <div>
+                This website is used to order and view existing orders
+            </div>
+        </div>
+    </div>
+  </div>
+   <!-- Main-form -->
+    <div class="container bg-light get-form">
+        <h3 class="text-center">Agenda Formulir Pemesanan</h3>
+    <div class="card shadow"> 
+        <div class="card-body">
+        <form action="progress.php" method="POST" enctype="multipart/form-data"> 
+            <div class="form-group"> 
+            <label>Nama</label>
+                <input type="text" class="form-control mb-3" id="nama" name="nama">
+            </div> 
+            <div class="form-group">  
+            <label for="tgl">Tanggal</label>
+                <span class="form-control mb-3">
+                    <i class="fa-solid fa-calendar"></i>
+                    <i class="ms-2">auto fill</i>
+                </span>
+            </div>
+            <div class="form-group mb-3">
+                <label for="material">Material Pilihan</label>
+                <select class="form-select" name="material" id="material">
+                    <option selected disabled> - </option>
+                    <option value="Batako">Batako</option>
+                    <option value="Asbes">Asbes</option>
+                    <option value="Semen">Semen</option>
+                    <option value="Kayu">Kayu</option>
+                    <option value="Pasir">Pasir</option>
+                </select>
+                <i>or customize order</i>
+                <input type="text" class="form-control" id="custom" name="custom" placeholder="Kustomisasi pilihan">
+            </div>
+            <div class="form-group mb-3">  
+                <label for="merk">Brand</label>
+                <input type="text" class="form-control mb-3" id="merk" name="merk">
+            </div>
+            <div class="form-group mb-3">  
+                <label for="merk">Stock</label>
+                <input type="text" class="form-control mb-3" id="stock" name="stock">
+            </div>
+            <div class="form-group"> 
+                <label>Alamat</label>
+                    <input type="text" class="form-control mb-3" id="alamat" name="alamat">
+                </div>
+            <br>
+            <input type="submit" name="submit" id="liveToastBtn" class="btn btn-primary btn-block bg-info" value="Submit">
+            <a href="daftar-pesanan.php" class="btn btn-success ms-auto">
+                View Page
+                <i class="fa-solid fa-arrow-up-right-from-square fa-sm ms-1"></i>
+            </a>
+        </form>
+        </div>
+    </div>
+    </div>
+    </div>
+  <!-- Endform -->
+  <!-- Bundle BS5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <!-- Bundle FontAwesome -->
+  <script src="../assets/vendor/fontawesome-free-6.1.1/js/all.min.js"></script>
+  <!-- Customize JS -->
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
