@@ -21,7 +21,7 @@ Responsi Praktikum Pemrograman Web - [ Toko Pembangunan ] Design By Bootstrap 5
 <!-- Bundle FontAwesome 6 -->
 <script src="assets/vendor/fontawesome-free-6.1.1/js/all.min.js"></script>
 ```
-### Font Google 5
+### Font Google
 ```html
 <!-- Link Font Google -->
 <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
